@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "PandocCiter.DefaultBib": "/workspaces/dev/lit.bib",
+    "python.pythonPath": "/usr/local/python/current/bin/python",
+    "python.dataScience.interactiveWindowMode": "perFile",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "r.alwaysUseActiveTerminal": true,
+    "r.bracketedPaste": true,
+    "r.sessionWatcher": true,
+    "r.plot.useHttpgd": true,
+    "r.plot.defaults.fullWindowMode": false,
+    "r.rpath.linux": "/usr/bin/R",
+    "r.rterm.linux": "/usr/local/python/current/bin/radian",
+    "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser"
+}

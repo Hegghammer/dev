@@ -2,7 +2,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Hegghammer/dev)
 
-A devcontainer template for Github Codespaces with R, Python, Pandoc, Quarto, and Latex.
+A codespace template for Github Codespaces with R, Python, Pandoc, Quarto, and Latex.
 
 ## Features
 
@@ -13,9 +13,7 @@ A devcontainer template for Github Codespaces with R, Python, Pandoc, Quarto, an
 
 ## How to use
 
-If you just want to explore the codespace: Click "Use this Template" and choose "Open in a Codespace".
-
-If you want to use it for a project of your own: Click "Use this Template", select "Create new repository", and choose a name for your repository. From here, you can simply click "Code" and then "Create Codespace on Main". However, for much faster load times, you will want to prebuild the codespace in your repository by following [this guide](https://docs.github.com/en/codespaces/prebuilding-your-codespaces/configuring-prebuilds#configuring-prebuilds). The prebuilding process can take up to 15 minutes, but afterwards your codespace will fire up in seconds every time. 
+Click the black "Open in Github Codespaces button" above or the green "Use this Template" button in the top right. Click "Create new codespace". If you want to keep the codespace on a repository of your own, commit and push it using the version control panel on the left. 
 
 ## Optional configurations
 

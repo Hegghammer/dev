@@ -1,5 +1,7 @@
 # Dev
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Hegghammer/dev)
+
 **NB: This is a branch with example files.**
 
 A devcontainer template for Github Codespaces with R, Python, Pandoc, Quarto, and Latex.

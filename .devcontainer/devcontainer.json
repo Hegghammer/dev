@@ -6,7 +6,7 @@
 			"configureZshAsDefaultShell": true
 		}, */
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-        	"packages": "default-jre, default-jdk, ffmpeg, gfortran, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, pandoc, pandoc-citeproc, tesseract-ocr-eng, texlive, vim"
+        	"packages": "default-jre, default-jdk, ffmpeg, gfortran, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, lmodern, pandoc, pandoc-citeproc, tesseract-ocr-eng, texlive, vim"
         },
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": false,

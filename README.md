@@ -13,7 +13,7 @@ A codespace template for Github Codespaces with R, Python, Pandoc, Quarto, and L
 
 ## How to use
 
-Click the black "Open in Github Codespaces button" above or the green "Use this Template" button in the top right. Click "Create new codespace". If you want to keep the codespace on a repository of your own, commit and push it using the version control panel on the left. 
+Click the black "Open in Github Codespaces" button above or the green "Use this Template" button on the top right. Then select "Create new codespace". If you want to keep the codespace on a repository of your own, commit and push it using the version control panel on the left. 
 
 ## Optional configurations
 

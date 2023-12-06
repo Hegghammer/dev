@@ -1,0 +1,71 @@
+{
+	"name": "dev",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+        	"packages": "ffmpeg, gfortran, latexmk, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, lmodern, pandoc, pandoc-citeproc, tesseract-ocr-eng, texlive, vim"
+        },
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": false,
+			"version": "latest"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
+			"installDevTools": true,
+			"installRMarkdown": true,
+			"installRadian": true,
+			"useTesting": true,
+			"vscodeRSupport": "full"
+		}
+	},
+	// "forwardPorts": [],
+	"updateContentCommand": "/bin/bash ./.devcontainer/update-content.sh > ~/update-content.log",
+	"postCreateCommand": "/bin/bash ./.devcontainer/post-create.sh > ~/post-create.log",
+	"customizations": {
+	    "codespaces": {
+			"openFiles": [ 
+				"untitled.R" 
+			]
+		  },
+		"vscode": {
+			"extensions": [
+ 				"quarto.quarto",
+				"christian-kohler.path-intellisense",
+				"James-Yu.latex-workshop",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-vsliveshare.vsliveshare",
+				"notZaki.pandocciter",
+/* 				"REditorSupport.r",*/
+				"RDebugger.r-debugger", 
+				"shd101wyy.markdown-preview-enhanced",
+				"timkmecl.chatgpt",
+				"yzhang.markdown-all-in-one"
+			],
+			"settings": {
+				"workbench.colorTheme": "Monokai",
+				"breadcrumbs.enabled": false,
+				"editor.minimap.enabled": false,
+				"workbench.editorAssociations": {
+					"*.pdf": "latex-workshop-pdf-hook"
+				},
+				"latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+				"PandocCiter.DefaultBib": "/workspaces/dev/lit.bib",
+				"python.pythonPath": "/usr/local/python/current/bin/python",
+				"python.dataScience.interactiveWindowMode": "perFile",
+				"python.dataScience.sendSelectionToInteractiveWindow": true,
+				"r.alwaysUseActiveTerminal": true,
+				"r.bracketedPaste": true,
+				"r.sessionWatcher": true,
+				"r.plot.useHttpgd": true,
+				"r.plot.defaults.fullWindowMode": false,
+/* 				"r.rpath.linux": "/usr/bin/R",
+				"r.rterm.linux": "/usr/local/python/current/bin/radian" */
+			}
+		}
+	}
+}

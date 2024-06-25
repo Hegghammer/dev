@@ -18,7 +18,10 @@
 			"installRadian": true,
 			"useTesting": true,
 			"vscodeRSupport": "full"
-		}
+		},
+		"ghcr.io/devcontainers/features/sshd:1": {
+        		"version": "latest"
+    		}
 	},
 	// "forwardPorts": [],
 	"updateContentCommand": "/bin/bash ./.devcontainer/update-content.sh > ~/update-content.log",

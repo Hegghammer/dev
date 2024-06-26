@@ -13,6 +13,9 @@ pandoc_git_tag="$(git ls-remote -q -t --refs https://github.com/jgm/pandoc.git |
 curl -sLo- "https://github.com/jgm/pandoc/releases/latest/download/pandoc-${pandoc_git_tag}-linux-amd64.tar.gz" | tar xzf - --strip-components 2 -C "/home/vscode/.pandoc" --exclude="share"
 echo 'export PATH="/home/vscode/.pandoc:$PATH"' >> ~/.bashrc
 
+# Install tinytex
+quarto install tool tinytex
+
 # Install github-cli
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
 && sudo mkdir -p -m 755 /etc/apt/keyrings \

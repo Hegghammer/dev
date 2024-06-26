@@ -41,12 +41,13 @@
 				"ms-toolsai.jupyter",
 				"ms-toolsai.jupyter-keymap",
 				"ms-toolsai.jupyter-renderers",
-				"ms-vsliveshare.vsliveshare",
+/*				"ms-vsliveshare.vsliveshare",*/
 				"notZaki.pandocciter",
+				"nvarner.typst-lsp",
 /* 				"REditorSupport.r",*/
 				"RDebugger.r-debugger", 
 				"shd101wyy.markdown-preview-enhanced",
-				"timkmecl.chatgpt",
+/*				"timkmecl.chatgpt",*/
 				"yzhang.markdown-all-in-one"
 			],
 			"settings": {

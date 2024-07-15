@@ -77,5 +77,16 @@
     {
         "key": "ctrl+alt+h",
         "command": "r.helpPanel.openForSelection"
+    },
+    // Rebind "Format Document" since it conflicts with Quarto "insert code cell"
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     }
 ]

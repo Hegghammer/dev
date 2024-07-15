@@ -3,7 +3,6 @@
 
 // To open `keybindings.json`, press F1, type "keyboard", and 
 // select "Preferences: Open Keyboard Shortcuts (JSON)"
-
 [
     // New keybinding for close tab, since CTRL + W is used by the browser
     {
@@ -28,25 +27,32 @@
     },
 
     // Insert assignment operator
-    // Using . since - won't work on Chrome
     {
         "key": "alt+.",
         "command": "editor.action.insertSnippet",
+        "args": { "snippet": " <- " },
         "when": "editorTextFocus",
-        "args": {
-            "snippet": "<-"
-        }
     },
-
+    {
+        "key": "alt+.",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": " <- " },
+        "when": "terminalFocus"
+      },
     // Insert piping operator
     {
         "key": "ctrl+shift+m",
         "command": "editor.action.insertSnippet",
+        "args": { "snippet": " |> " },
         "when": "editorTextFocus",
-        "args": {
-            "snippet": "|>"
-        }
     },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": " |> " },
+        "when": "terminalFocus"
+      },
+
 
     // Insert r code chunk
     {
@@ -59,7 +65,6 @@
     },
 
     // Render Quarto document
-    // Custom binding since ctrl+shift+k won't work in browsers
     {
         "key": "ctrl+alt+r",
         "command": "quarto.renderDocument",
@@ -78,7 +83,7 @@
         "key": "ctrl+alt+h",
         "command": "r.helpPanel.openForSelection"
     },
-    // Rebind "Format Document" since it conflicts with Quarto "insert code cell"
+    // Rebind Format Document since it conflicts with Quarto insert code cell
     {
         "key": "ctrl+k ctrl+f",
         "command": "editor.action.formatDocument",

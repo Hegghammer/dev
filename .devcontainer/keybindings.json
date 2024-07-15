@@ -5,39 +5,16 @@
 // select "Preferences: Open Keyboard Shortcuts (JSON)"
 
 [
-    // Insert assignment operator
+    // New keybinding for close tab, since CTRL + W is used by the browser
     {
-        "key": "alt+-",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
-        "args": {
-            "snippet": "<- "
-        }
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.closeActiveEditor"
     },
-    // Insert piping operator
     {
-        "key": "ctrl+shift+m",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
-        "args": {
-            "snippet": "%>% "
-        }
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
     },
-    // Insert code chunk
-    {
-        "key": "ctrl+alt+i",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
-        "args": {
-            "snippet": "```{r}\n$0\n```"
-        }
-    },
-    // Knit Rmd file
-    {
-        "key": "ctrl+shift+k",
-        "command": "r.knitRmd",
-        "when": "editorTextFocus && editorLangId == 'rmd'"
-    },
+    
     // Toggle comment
     {
         "key": "ctrl+shift+c",
@@ -49,13 +26,56 @@
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
-    // New keybinding for close tab, since CTRL + W is taken by the browser
+
+    // Insert assignment operator
+    // Using . since - won't work on Chrome
     {
-        "key": "ctrl+alt+w",
-        "command": "workbench.action.closeActiveEditor"
+        "key": "alt+.",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "<-"
+        }
     },
+
+    // Insert piping operator
     {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
+        "key": "ctrl+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "|>"
+        }
+    },
+
+    // Insert r code chunk
+    {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "```{r}\n$0\n```"
+        }
+    },
+
+    // Render Quarto document
+    // Custom binding since ctrl+shift+k won't work in browsers
+    {
+        "key": "ctrl+alt+r",
+        "command": "quarto.renderDocument",
+        "when": "editorTextFocus"
+    },
+
+    // Render Quarto document
+    {
+        "key": "ctrl+alt+p",
+        "command": "quarto.preview",
+        "when": "editorTextFocus"
+    },
+
+    // Open R help for selection
+    {
+        "key": "ctrl+alt+h",
+        "command": "r.helpPanel.openForSelection"
     }
 ]

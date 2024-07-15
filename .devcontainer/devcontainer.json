@@ -51,7 +51,8 @@
 				"yzhang.markdown-all-in-one"
 			],
 			"settings": {
-				"workbench.colorTheme": "Monokai Dimmed",
+				"workbench.colorTheme": "GitHub Light Default",
+				"workbench.iconTheme": "vs-minimal",
 				"breadcrumbs.enabled": false,
 				"editor.minimap.enabled": false,
 				"workbench.editorAssociations": {

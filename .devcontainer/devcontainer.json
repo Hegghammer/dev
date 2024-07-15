@@ -51,14 +51,14 @@
 				"yzhang.markdown-all-in-one"
 			],
 			"settings": {
-				"workbench.colorTheme": "Monokai",
+				"workbench.colorTheme": "Monokai Dimmed",
 				"breadcrumbs.enabled": false,
 				"editor.minimap.enabled": false,
 				"workbench.editorAssociations": {
 					"*.pdf": "latex-workshop-pdf-hook"
 				},
 				"latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
-				"PandocCiter.DefaultBib": "/workspaces/dev/lit.bib",
+/*				"PandocCiter.DefaultBib": "/workspaces/dev/lit.bib",*/
 				"python.pythonPath": "/usr/local/python/current/bin/python",
 				"python.dataScience.interactiveWindowMode": "perFile",
 				"python.dataScience.sendSelectionToInteractiveWindow": true,

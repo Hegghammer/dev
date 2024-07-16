@@ -30,7 +30,7 @@
         "key": "alt+.",
         "command": "editor.action.insertSnippet",
         "args": { "snippet": " <- " },
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+.",
@@ -44,7 +44,7 @@
         "key": "ctrl+shift+m",
         "command": "editor.action.insertSnippet",
         "args": { "snippet": " |> " },
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+m",

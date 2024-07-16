@@ -93,5 +93,15 @@
         "key": "ctrl+shift+i",
         "command": "-editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    // Open settings.json
+    {
+        "key": "ctrl+k s",
+        "command": "workbench.action.openRemoteSettingsFile"
+    },
+    // Open keybindings.json
+    {
+        "key": "ctrl+k k",
+        "command": "workbench.action.openGlobalKeybindingsFile"
     }
 ]

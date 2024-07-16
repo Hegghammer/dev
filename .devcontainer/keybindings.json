@@ -1,8 +1,6 @@
-// To get useful RStudio keybindings like ALT + - for assignment operator,
-// replace contents of existing `keybindings.json` with the below.
+// Custom keybindings that are more RStudio-like and work better in browsers.
+// Paste the below into your codespace's `keybindings.json`.
 
-// To open `keybindings.json`, press F1, type "keyboard", and 
-// select "Preferences: Open Keyboard Shortcuts (JSON)"
 [
     // New keybinding for close tab, since CTRL + W is used by the browser
     {
@@ -26,7 +24,8 @@
         "when": "editorTextFocus && !editorReadonly"
     },
 
-    // Insert assignment operator
+    // Insert assignment operator 
+    // (using . instead of - because the latter confuses Chrome)
     {
         "key": "alt+.",
         "command": "editor.action.insertSnippet",
@@ -39,6 +38,7 @@
         "args": { "text": " <- " },
         "when": "terminalFocus"
       },
+    
     // Insert piping operator
     {
         "key": "ctrl+shift+m",
@@ -52,7 +52,6 @@
         "args": { "text": " |> " },
         "when": "terminalFocus"
       },
-
 
     // Insert r code chunk
     {
@@ -83,6 +82,7 @@
         "key": "ctrl+alt+h",
         "command": "r.helpPanel.openForSelection"
     },
+    
     // Rebind Format Document since it conflicts with Quarto insert code cell
     {
         "key": "ctrl+k ctrl+f",
@@ -94,11 +94,13 @@
         "command": "-editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
+    
     // Open settings.json
     {
         "key": "ctrl+k s",
         "command": "workbench.action.openRemoteSettingsFile"
     },
+    
     // Open keybindings.json
     {
         "key": "ctrl+k k",

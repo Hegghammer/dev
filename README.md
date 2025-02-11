@@ -4,10 +4,10 @@ A codespace template for Github Codespaces with R, Python, Pandoc, Quarto, and L
 
 ## Features
 
-- Programs: R (latest/4.3.2), Radian, Latex (`texlive`), Python (latest/3.12), Quarto, and Pandoc (2.9.2) plus dependencies for `rJava`, `sf`, and `tesseract`. 
+- Programs: R (latest/4.4.2), Radian, Latex (`texlive`), Python (latest/3.13), Quarto (1.6.40), and Pandoc (3.6.3) plus dependencies for `rJava`, `sf`, and `tesseract`. 
 - OS: Ubuntu with sudo privileges, so you can install whatever else you need with `sudo apt install <packagename>`. 
-- VSCode extensions: ChatGPT, Jupyter, Latex Workshop, Liveshare, Markdown All-in-One, Markdown Preview Enhanced, Pandoc Citer, Path Intellisense, Python, Pylance, Quarto, R, and R-debugger.
-- UI: Monokai Theme, no breadcrumbs or minimap.
+- VSCode extensions: Jupyter, Latex Workshop, Markdown All-in-One, Markdown Preview Enhanced, Path Intellisense, Python, Pylance, Quarto, R, and R-debugger.
+- UI: Light Default, no breadcrumbs or minimap.
 
 ## How to use
 
@@ -19,6 +19,6 @@ To start coding in R, just type `r` in the terminal and press ENTER.
 
 ## Optional configurations
 
-- For RStudio-like keybindings (such as ALT + - for assignment operator), press F1, type "keyboard" and click "Preferences: Open Default Keyboard Shortcuts (JSON)". Replace the contents with that of `.devcontainer/keybindings.json`, save and close. 
+- For RStudio-like keybindings (such as ALT + - for assignment operator), press F1, type "keyboard" and click "Preferences: Open Keyboard Shortcuts (JSON)". Replace the contents with that of `.devcontainer/keybindings.json`, save and close. 
 
 - Make API keys and other secrets available by following [this guide](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-secrets-for-your-codespaces).

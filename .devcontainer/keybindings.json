@@ -70,7 +70,7 @@
         "when": "editorTextFocus"
     },
 
-    // Render Quarto document
+    // Preview Quarto document
     {
         "key": "ctrl+alt+p",
         "command": "quarto.preview",

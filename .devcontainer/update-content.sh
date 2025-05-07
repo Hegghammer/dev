@@ -42,3 +42,6 @@ sudo dpkg -i vivid*.deb
 rm vivid*.deb
 echo 'export LS_COLORS="$(vivid generate lava)"' >> ~/.bashrc
 echo 'export LS_COLORS="$(vivid generate lava)"' >> ~/.zshrc
+
+# Add aliases to .zshrc
+echo "source ~/.bash_aliases" >> ~/.zshrc

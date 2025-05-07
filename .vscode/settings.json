@@ -3,6 +3,7 @@
   "breadcrumbs.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontLigatures": true,
+  "editor.fontSize": 17,
   "editor.glyphMargin": false, // less space to left of line numbers
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
@@ -25,6 +26,10 @@
   "r.session.useWebServer": true,
   "r.sessionWatcher": true,
   "r.workspaceViewer.showObjectSize": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontSize": 16,
   "workbench.colorTheme": "GitHub Light Default",
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"

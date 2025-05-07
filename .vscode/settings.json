@@ -1,0 +1,65 @@
+{
+  // General settings
+  "breadcrumbs.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontLigatures": true,
+  "editor.glyphMargin": false, // less space to left of line numbers
+  "editor.minimap.enabled": false,
+  "explorer.compactFolders": false,
+  "files.associations": {
+    "*.txt": "markdown",
+    "*.latex": "latex",
+    "*.qmd": "quarto",
+    "*.typ": "typst"
+  },
+  "github.copilot.editor.enableAutoCompletions": false,
+  "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+  "python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+  "python.pythonPath": "/usr/local/python/current/bin/python",
+  "python.dataScience.interactiveWindowMode": "perFile",
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "r.alwaysUseActiveTerminal": true,
+  "r.bracketedPaste": true,
+  "r.plot.defaults.fullWindowMode": false,
+  "r.plot.useHttpgd": true,
+  "r.session.useWebServer": true,
+  "r.sessionWatcher": true,
+  "r.workspaceViewer.showObjectSize": true,
+  "workbench.colorTheme": "GitHub Light Default",
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  // Filetype-specific settings
+  "[bibtex]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 100,
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.quickSuggestions": {
+      "other": "off",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.wordBasedSuggestions": "off", // otherwise every word gets suggestions
+    "editor.quickSuggestionsDelay": 5,
+    "editor.acceptSuggestionOnEnter": "on"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.wordWrapColumn": 80
+  },
+  "[quarto]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80
+  },
+  "[r]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
+  }
+}

@@ -29,6 +29,7 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontSize": 16,
   "workbench.colorTheme": "GitHub Light Default",
   "workbench.editorAssociations": {

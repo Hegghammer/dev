@@ -5,6 +5,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "editor.glyphMargin": false, // less space to left of line numbers
+  "editor.lineHeight": 26,
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "files.associations": {

@@ -43,5 +43,6 @@ rm vivid*.deb
 echo 'export LS_COLORS="$(vivid generate lava)"' >> ~/.bashrc
 echo 'export LS_COLORS="$(vivid generate lava)"' >> ~/.zshrc
 
-# Add aliases to .zshrc
+# Tweak .zshrc
+sed -i 's/ZSH_THEME="devcontainers"/ZSH_THEME="arrow"/' ~/.zshrc
 echo "source ~/.bash_aliases" >> ~/.zshrc

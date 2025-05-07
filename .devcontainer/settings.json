@@ -1,0 +1,32 @@
+{
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This dev container includes an SSH server so that you can use an external terminal, sftp, or SSHFS to interact with it. The first time you've started the container, you will want to set a password for your user. With each connection to the container, you'll want to forward the SSH port to your local machine and use a local terminal or other tool to connect using the password you set."
+		}
+	],
+	"python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8"
+	},
+	"[r]": {
+		"editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
+	},
+	"workbench.colorTheme": "GitHub Light Default",
+	"workbench.iconTheme": "vs-minimal",
+	"breadcrumbs.enabled": false,
+	"editor.minimap.enabled": false,
+	"workbench.editorAssociations": {
+		"*.pdf": "latex-workshop-pdf-hook"
+	},
+	"latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+	"python.pythonPath": "/usr/local/python/current/bin/python",
+	"python.dataScience.interactiveWindowMode": "perFile",
+	"python.dataScience.sendSelectionToInteractiveWindow": true,
+	"r.alwaysUseActiveTerminal": true,
+	"r.bracketedPaste": true,
+	"r.sessionWatcher": true,
+	"r.plot.useHttpgd": true,
+	"r.plot.defaults.fullWindowMode": false,
+	"r.session.useWebServer": true,
+	"r.workspaceViewer.showObjectSize": true
+}

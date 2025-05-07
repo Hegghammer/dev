@@ -3,11 +3,11 @@
 sudo apt update && sudo apt -y upgrade
 pip install --upgrade setuptools
 
-# Install Typst
+# Install typst
 curl -fsSL https://typst.community/typst-install/install.sh | sh
 echo 'export PATH="/home/vscode/.typst/bin:$PATH"' >> ~/.bashrc
 
-# Install latest Pandoc
+# Install latest pandoc
 mkdir /home/vscode/.pandoc
 pandoc_git_tag="$(git ls-remote -q -t --refs https://github.com/jgm/pandoc.git | awk '/tags\/[0-9]/{sub("refs/tags/", ""); print $2 }' | awk '!/^$/' | sort -rV | head -n 1)"
 curl -sLo- "https://github.com/jgm/pandoc/releases/latest/download/pandoc-${pandoc_git_tag}-linux-amd64.tar.gz" | tar xzf - --strip-components 2 -C "/home/vscode/.pandoc" --exclude="share"
@@ -27,3 +27,18 @@ quarto install tool tinytex
 
 # Create ssh key
 yes '' | ssh-keygen -N '' > /dev/null
+
+# Install vivid for better terminal colours
+LINK=$(
+  curl -s https://api.github.com/repos/sharkdp/vivid/releases/latest |
+    grep "browser_download_url.*amd64.deb" |
+    grep -v "musl" |
+    cut -d : -f 2,3 |
+    tr -d \" |
+    xargs
+)
+wget -q $LINK
+sudo dpkg -i vivid*.deb
+rm vivid*.deb
+echo 'export LS_COLORS="$(vivid generate lava)"' >> ~/.bashrc
+echo 'export LS_COLORS="$(vivid generate lava)"' >> ~/.zshrc

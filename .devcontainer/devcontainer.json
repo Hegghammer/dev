@@ -3,7 +3,7 @@
 	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-        	"packages": "ffmpeg, gfortran, latexmk, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, lmodern, pandoc-citeproc, tesseract-ocr-eng, texlive, vim"
+        	"packages": "ffmpeg, gfortran, latexmk, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, lmodern, pandoc-citeproc, tesseract-ocr-eng, texlive"
         },
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": false,
@@ -40,7 +40,6 @@
 				"ms-python.python",
 				"ms-toolsai.jupyter",
 				"ms-toolsai.jupyter-keymap",
-				"nvarner.typst-lsp",
 				"shd101wyy.markdown-preview-enhanced",
 				"yzhang.markdown-all-in-one"
 			],
@@ -61,6 +60,8 @@
 				"r.sessionWatcher": true,
 				"r.plot.useHttpgd": true,
 				"r.plot.defaults.fullWindowMode": false,
+				"r.session.useWebServer": true,
+				"r.workspaceViewer.showObjectSize": true,
 			}
 		}
 	}

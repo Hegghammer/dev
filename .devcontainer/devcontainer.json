@@ -3,7 +3,7 @@
 	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-        	"packages": "ffmpeg, gfortran, latexmk, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, lmodern, pandoc-citeproc, tesseract-ocr-eng, texlive"
+        	"packages": "ffmpeg, gfortran, latexmk, libgdal-dev, libjpeg-dev, libleptonica-dev, libpoppler-cpp-dev, libtesseract-dev, libudunits2-dev, lmodern, pandoc-citeproc, tesseract-ocr-eng"
         },
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": false,

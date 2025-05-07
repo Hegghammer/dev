@@ -27,3 +27,8 @@ quarto install tool tinytex
 
 # Create ssh key
 yes '' | ssh-keygen -N '' > /dev/null
+
+# Remove unnecessary extensions
+code --uninstall-extension ms-toolsai.vscode-jupyter-slideshow
+code --uninstall-extension ms-toolsai.vscode-jupyter-cell-tags
+code --uninstall-extension ms-python.debugpy
